@@ -2,16 +2,22 @@
 
 event HudLowAmmoPulse
 {
-	Animate AmmoInClip 							FgColor 	"Low Ammo In Clip" 					Linear 	0.0 	0.075
-	Animate AmmoInClip 							FgColor 	"Low Ammo In Clip Pulse" 			Linear 	0.125 	0.075
+	animate AmmoInClip		FgColor								"255 149 149 255"	Linear 	0.0 	0.0
+	animate gradient					FgColor								"255 136 134 255"	Linear 	0.0 	0.0
+	animate gradient2					FgColor								"255 123 119 255"	Linear 	0.0 	0.0
+	animate gradient3					FgColor								"255 109 104 255"	Linear 	0.0 	0.0
+	animate gradient4					FgColor								"255 95 87 255" 	Linear 	0.0 	0.0
+	animate gradient4					FgColor								"255 80 70 255" 	Linear 	0.0 	0.0
+	animate gradient5					FgColor								"255 62 52 255" 	Linear 	0.0 	0.0
+	animate gradient6					FgColor								"255 41 31 255"  	Linear 	0.0 	0.0
+	animate gradient7					FgColor								"255 0 0 255"  	Linear 	0.0 	0.0
+	
+	animate gradientlook				FgColor								"255 255 255 255"  	accel 	0.25 	0.0
+	animate gradientlook				FgColor								"255 80 70 55"  	accel 	0.4 	0.0
+	animate gradientlook				FgColor								"255 255 255 255"  	accel 	0.55 	0.0
+	animate gradientlook				FgColor								"255 80 70 55"  	accel 	0.7 	0.0
 
-	Animate AmmoInReserve						FgColor 	"Low Ammo In Reserve" 				Linear 	0.0 	0.075
-	Animate AmmoInReserve 						FgColor 	"Low Ammo In Reserve Pulse" 		Linear 	0.125 	0.075
-
-	Animate AmmoNoClip 							FgColor 	"Low Ammo No Clip" 					Linear 	0.0 	0.075
-	Animate AmmoNoClip 							FgColor 	"Low Ammo No Clip Pulse" 			Linear 	0.125 	0.075
-
-	RunEvent HudLowAmmoPulseLoop				0.4
+	RunEvent HudLowAmmoPulseLoop				1.0
 }
 
 event HudLowAmmoPulseStop
@@ -19,11 +25,20 @@ event HudLowAmmoPulseStop
 	StopEvent HudLowAmmoPulse 					0.0
 	StopEvent HudLowAmmoPulseLoop 				0.0
 
-	Animate AmmoInClip 							FgColor 	"Ammo In Clip" 						Linear 	0.0 	0.0
-
-	Animate AmmoInReserve 						FgColor 	"Ammo In Reserve" 					Linear 	0.0 	0.0
-
-	Animate AmmoNoClip 							FgColor 	"Ammo No Clip" 						Linear 	0.0 	0.0
+	animate AmmoInClip		FgColor											"177 193 202 255"	Linear 	0.0 	0.0
+	animate gradient					FgColor								"153 187 209 255"	Linear 	0.0 	0.0
+	animate gradient2					FgColor								"128 180 217 255"	Linear 	0.0 	0.0
+	animate gradient3					FgColor								"103 172 225 255"	Linear 	0.0 	0.0
+	animate gradient4					FgColor								"77 164 233 255" 	Linear 	0.0 	0.0
+	animate gradient4					FgColor								"49 154 241 255" 	Linear 	0.0 	0.0
+	animate gradient5					FgColor								"10 144 247 255" 	Linear 	0.0 	0.0
+	animate gradient6					FgColor								"0 133 252 255"  	Linear 	0.0 	0.0
+	animate gradient7					FgColor								"0 120 255 255"  	Linear 	0.0 	0.0
+	
+	animate gradientlook				FgColor								"255 255 255 255"  	Linear 	0.0 	0.0
+	animate gradientlook				FgColor								"255 255 255 50"  	Linear 	0.1 	0.0
+	animate gradientlook				FgColor								"255 255 255 255"  	Linear 	0.0 	0.0
+	animate gradientlook				FgColor								"255 255 255 50"  	Linear 	0.7 	0.0
 }
 
 //====================================================================================================================
